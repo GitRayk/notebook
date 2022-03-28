@@ -63,7 +63,7 @@ RUN mkdir build && mkdir run && cd build\
 
 antlr-4.9.2-complete.jar 文件放在了 /usr/local/lib/ 中  
 容器中必须有个 runtime-cpp 源码，设置其所在路径为 `export ANTLR_RUNTIME=该绝对路径`  
-之后运行以下代码:  
+~~之后运行以下代码~~已添加至 dockerfile 中，现在的环境创建容器即可用:  
 ``` Shell
 cd $ANTLR_RUNTIME
 mkdir build && mkdir run && cd build
