@@ -5,7 +5,7 @@
 ``` Shell
 cd <antlr4-dir>/runtime/Cpp (this is where this readme is located)  # 实际上这个路径在我这应该是 /home/root/runtime-cpp
 mkdir build && mkdir run && cd build
-cmake .. 
+cmake .. -DANTLR_JAR_LOCATION=full/path/to/antlr4-4.5.4-SNAPSHOT.jar -DWITH_DEMO=True
 # 编译生成的动态链接库文件放在 /home/root/runtime-cpp/dist
 make
 DESTDIR=<antlr4-dir>/runtime/Cpp/run make install  # 这一步产生的文件都被放在了 /home/root/runtime-cpp/run/usr/local/include/antlr4-runtime/ 如果我不指定路径是不是就会放在到正确的地方？ 
