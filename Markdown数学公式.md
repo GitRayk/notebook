@@ -1,4 +1,5 @@
 # Markdown 数学公式
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 其实是用 LateX 来实现的  
 **Markdown 中要使用 LateX 语法，只需要在语法的两端是用一组 “\$” 美元符号表示行内公式，用一组 “\$\$” 表示块级公式**  
