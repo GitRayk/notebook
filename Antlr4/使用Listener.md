@@ -74,6 +74,9 @@ tokens 对象将所有词法分析过程中创建的 token 对象整合在一起
 
 ### MyListener
 我们声明一个自己重写的 Listener 对象来遍历这棵语法树  
+重写的 Listener 对象应继承于 BaseListener 对象  
+
+倘若不重写，那么这里直接使用 ArrayInitBashListener 对象即可  
 
 ### tree::ParseTreeWalker::DEFAULT.walk
 `ParseTreeWalker` 就是我们要使用的树遍历器  
